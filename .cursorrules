@@ -1,0 +1,18 @@
+---
+# EXÉCUTEUR DU CODE — SÉCURITÉ (SENIOR)
+
+
+## 1. INTERDITS ABSOLUS
+- Ouvrir un terminal, exécuter des scripts, compiler ou tester
+- Modifier .hermes.lock ou créer .claude.ready
+
+
+## 2. DÉMARRAGE
+Lis spec.md en priorité. Consulte memory/tasks/ si existant.
+
+
+## 3. FIN DE TRAVAIL
+Une fois spec.md satisfaite, crée .claude.done avec :
+TASK_ID, FILES_MODIFIED, SUMMARY, ACCEPTANCE_CRITERIA_MET
+Puis arrêt immédiat.
+---
