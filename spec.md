@@ -18,3 +18,8 @@ Créer une fonction `hello_world()` dans `main.py` à la racine du projet, qui r
 ## NOTES
 - Pas de dépendances externes requises au-delà de `pytest` (éventuellement déjà dispo)
 - Garde le code minimal et clair
+
+## STATUT
+- validation: ✅ OK
+- push: ❌ ÉCHEC
+- retry: 2026-06-09 16:31:40
