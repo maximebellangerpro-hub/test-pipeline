@@ -1,4 +1,4 @@
-from main import hello_world, add, multiply
+from main import hello_world, add, multiply, subtract
 
 
 def test_hello_world():
@@ -17,3 +17,10 @@ def test_multiply():
     assert multiply(0, 5) == 0
     assert multiply(-2, 3) == -6
     assert multiply(7, 1) == 7
+
+
+def test_subtract():
+    assert subtract(5, 3) == 2
+    assert subtract(0, 0) == 0
+    assert subtract(-1, 1) == -2
+    assert subtract(10, -5) == 15

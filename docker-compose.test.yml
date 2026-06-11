@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  test-runner:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes:
+      - .:/app:ro
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - CI=true
+    command: >
+      sh -c "pip install pytest --quiet &&
+             python -m pytest tests/ -v --tb=short --no-header 2>&1"
+    restart: "no"
