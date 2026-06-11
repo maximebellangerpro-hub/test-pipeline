@@ -48,3 +48,31 @@ Ajouter une fonction `add(a, b)` dans `main.py` qui retourne la somme de ses deu
 
 ## STATUT
 - validation: ⏳ EN ATTENTE
+## STATUT
+- validation: ✅ OK
+- pushed: 2026-06-11 10:17:30
+
+
+# SPEC : Tâche additionnelle — multiply()
+
+## ID
+TASK-003
+
+## DESCRIPTION
+Ajouter une fonction `multiply(a, b)` dans `main.py` qui retourne le produit de ses deux arguments. Créer le test unitaire correspondant `test_multiply()` dans `tests/test_main.py`.
+
+## FICHIER(S) CONCERNÉ(S)
+- `main.py`
+- `tests/test_main.py`
+
+## ACCEPTANCE CRITERIA
+1. `main.py` contient une fonction `multiply(a, b)` retournant `a * b`.
+2. `tests/test_main.py` contient une fonction `test_multiply()` qui importe `multiply` depuis `main` et vérifie que `multiply(3, 4) == 12` (et d'autres cas).
+3. Le test passe avec `python -m pytest tests/test_main.py -v`.
+
+## NOTES
+- Garde le code simple et typé (facultatif).
+- Aucun effet de bord.
+
+## STATUT
+- validation: ⏳ EN ATTENTE
