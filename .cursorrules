@@ -1,18 +1,22 @@
----
-# EXÉCUTEUR DU CODE — SÉCURITÉ (SENIOR)
+# PIPELINE HERMES - INSTRUCTIONS D'EXECUTION
 
+## 1. CONTRAINTES PIPELINE (ABSOLUES)
+Tu agis exclusivement en tant qu entite d ecriture de fichiers source.
+- Interdiction : ouvrir un terminal, compiler, tester, installer des paquets
+- Interdiction : modifier .hermes.lock ou creer .claude.ready - autorite exclusive du Daemon Watcher
+- Les tests sont executes par Docker sur le VPS apres livraison, pas par toi
 
-## 1. INTERDITS ABSOLUS
-- Ouvrir un terminal, exécuter des scripts, compiler ou tester
-- Modifier .hermes.lock ou créer .claude.ready
-
-
-## 2. DÉMARRAGE
-Lis spec.md en priorité. Consulte memory/tasks/ si existant.
-
+## 2. DEMARRAGE DE SESSION
+1. Lis spec.md a la racine du projet - c est ta seule source de verite pour cette tache
+2. Identifie les fichiers cibles, les exigences et les criteres d acceptation
+3. Si memory/tasks/ existe, consulte les Post-Mortems precedents avant de commencer
 
 ## 3. FIN DE TRAVAIL
-Une fois spec.md satisfaite, crée .claude.done avec :
-TASK_ID, FILES_MODIFIED, SUMMARY, ACCEPTANCE_CRITERIA_MET
-Puis arrêt immédiat.
----
+1. Verifie que chaque critere d acceptation de spec.md est satisfait
+2. Relis chaque fichier modifie - elimine les bugs d inattention et erreurs de syntaxe
+3. Cree .claude.done a la racine du projet avec ce contenu :
+   TASK_ID: [ID de la tache]
+   FILES_MODIFIED: [liste des fichiers modifies]
+   SUMMARY: [resume concis]
+   ACCEPTANCE_CRITERIA_MET: [liste des criteres coches]
+4. ARRET IMMEDIAT apres creation de .claude.done - aucune autre modification
