@@ -1,4 +1,5 @@
-from main import hello_world, add, multiply, subtract
+import pytest
+from main import hello_world, add, multiply, subtract, divide
 
 
 def test_hello_world():
@@ -24,3 +25,13 @@ def test_subtract():
     assert subtract(0, 0) == 0
     assert subtract(-1, 1) == -2
     assert subtract(10, -5) == 15
+
+
+def test_divide():
+    assert divide(10, 2) == 5.0
+    assert divide(9, -3) == -3.0
+
+
+def test_divide_by_zero():
+    with pytest.raises(ValueError):
+        divide(1, 0)
